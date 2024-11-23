@@ -34,6 +34,21 @@ namespace MoeMikuManage
             this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.检查更新ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.scaleLable = new System.Windows.Forms.Label();
+            this.scale = new System.Windows.Forms.TrackBar();
+            this.rotZLable = new System.Windows.Forms.Label();
+            this.rotYLable = new System.Windows.Forms.Label();
+            this.rotXLable = new System.Windows.Forms.Label();
+            this.ZposLable = new System.Windows.Forms.Label();
+            this.YposLable = new System.Windows.Forms.Label();
+            this.XposLable = new System.Windows.Forms.Label();
+            this.rotX = new System.Windows.Forms.TrackBar();
+            this.rotY = new System.Windows.Forms.TrackBar();
+            this.rotZ = new System.Windows.Forms.TrackBar();
+            this.Zpos = new System.Windows.Forms.TrackBar();
+            this.Ypos = new System.Windows.Forms.TrackBar();
+            this.Xpos = new System.Windows.Forms.TrackBar();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.treeView1 = new System.Windows.Forms.TreeView();
             ((System.ComponentModel.ISupportInitialize)(this.MainContSplit)).BeginInit();
             this.MainContSplit.Panel1.SuspendLayout();
@@ -44,12 +59,20 @@ namespace MoeMikuManage
             this.FileSplit.Panel2.SuspendLayout();
             this.FileSplit.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.scale)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rotX)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rotY)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rotZ)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Zpos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Ypos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Xpos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
             // glControl1
             // 
             resources.ApplyResources(this.glControl1, "glControl1");
-            this.glControl1.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.glControl1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.glControl1.Name = "glControl1";
             this.glControl1.VSync = false;
             this.glControl1.AutoSizeChanged += new System.EventHandler(this.glControl1_AutoSizeChanged);
@@ -121,6 +144,21 @@ namespace MoeMikuManage
             // 
             // FileSplit.Panel2
             // 
+            this.FileSplit.Panel2.Controls.Add(this.scaleLable);
+            this.FileSplit.Panel2.Controls.Add(this.scale);
+            this.FileSplit.Panel2.Controls.Add(this.rotZLable);
+            this.FileSplit.Panel2.Controls.Add(this.rotYLable);
+            this.FileSplit.Panel2.Controls.Add(this.rotXLable);
+            this.FileSplit.Panel2.Controls.Add(this.ZposLable);
+            this.FileSplit.Panel2.Controls.Add(this.YposLable);
+            this.FileSplit.Panel2.Controls.Add(this.XposLable);
+            this.FileSplit.Panel2.Controls.Add(this.rotX);
+            this.FileSplit.Panel2.Controls.Add(this.rotY);
+            this.FileSplit.Panel2.Controls.Add(this.rotZ);
+            this.FileSplit.Panel2.Controls.Add(this.Zpos);
+            this.FileSplit.Panel2.Controls.Add(this.Ypos);
+            this.FileSplit.Panel2.Controls.Add(this.Xpos);
+            this.FileSplit.Panel2.Controls.Add(this.trackBar1);
             this.FileSplit.Panel2.Controls.Add(this.treeView1);
             this.FileSplit.Panel2.Controls.Add(this.editModel);
             this.FileSplit.Panel2.Controls.Add(this.loadModel);
@@ -171,8 +209,101 @@ namespace MoeMikuManage
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             // 
+            // scaleLable
+            // 
+            resources.ApplyResources(this.scaleLable, "scaleLable");
+            this.scaleLable.Name = "scaleLable";
+            // 
+            // scale
+            // 
+            resources.ApplyResources(this.scale, "scale");
+            this.scale.Maximum = 3;
+            this.scale.Minimum = -10;
+            this.scale.Name = "scale";
+            // 
+            // rotZLable
+            // 
+            resources.ApplyResources(this.rotZLable, "rotZLable");
+            this.rotZLable.Name = "rotZLable";
+            // 
+            // rotYLable
+            // 
+            resources.ApplyResources(this.rotYLable, "rotYLable");
+            this.rotYLable.Name = "rotYLable";
+            // 
+            // rotXLable
+            // 
+            resources.ApplyResources(this.rotXLable, "rotXLable");
+            this.rotXLable.Name = "rotXLable";
+            // 
+            // ZposLable
+            // 
+            resources.ApplyResources(this.ZposLable, "ZposLable");
+            this.ZposLable.Name = "ZposLable";
+            this.ZposLable.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // YposLable
+            // 
+            resources.ApplyResources(this.YposLable, "YposLable");
+            this.YposLable.Name = "YposLable";
+            // 
+            // XposLable
+            // 
+            resources.ApplyResources(this.XposLable, "XposLable");
+            this.XposLable.Name = "XposLable";
+            this.XposLable.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // rotX
+            // 
+            resources.ApplyResources(this.rotX, "rotX");
+            this.rotX.Maximum = 180;
+            this.rotX.Minimum = -180;
+            this.rotX.Name = "rotX";
+            // 
+            // rotY
+            // 
+            resources.ApplyResources(this.rotY, "rotY");
+            this.rotY.Maximum = 180;
+            this.rotY.Minimum = -180;
+            this.rotY.Name = "rotY";
+            // 
+            // rotZ
+            // 
+            resources.ApplyResources(this.rotZ, "rotZ");
+            this.rotZ.Maximum = 180;
+            this.rotZ.Minimum = -180;
+            this.rotZ.Name = "rotZ";
+            // 
+            // Zpos
+            // 
+            resources.ApplyResources(this.Zpos, "Zpos");
+            this.Zpos.Maximum = 100;
+            this.Zpos.Minimum = -100;
+            this.Zpos.Name = "Zpos";
+            // 
+            // Ypos
+            // 
+            resources.ApplyResources(this.Ypos, "Ypos");
+            this.Ypos.Maximum = 100;
+            this.Ypos.Minimum = -100;
+            this.Ypos.Name = "Ypos";
+            // 
+            // Xpos
+            // 
+            resources.ApplyResources(this.Xpos, "Xpos");
+            this.Xpos.Maximum = 100;
+            this.Xpos.Minimum = -100;
+            this.Xpos.Name = "Xpos";
+            this.Xpos.Scroll += new System.EventHandler(this.trackBar2_Scroll);
+            // 
+            // trackBar1
+            // 
+            resources.ApplyResources(this.trackBar1, "trackBar1");
+            this.trackBar1.Name = "trackBar1";
+            // 
             // treeView1
             // 
+            this.treeView1.BackColor = System.Drawing.SystemColors.Control;
             resources.ApplyResources(this.treeView1, "treeView1");
             this.treeView1.Name = "treeView1";
             // 
@@ -203,6 +334,14 @@ namespace MoeMikuManage
             this.FileSplit.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.scale)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rotX)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rotY)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rotZ)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Zpos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Ypos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Xpos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -226,6 +365,21 @@ namespace MoeMikuManage
         private System.Windows.Forms.ToolStripMenuItem 关于ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 检查更新ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.TrackBar rotX;
+        private System.Windows.Forms.TrackBar rotY;
+        private System.Windows.Forms.TrackBar rotZ;
+        private System.Windows.Forms.TrackBar Zpos;
+        private System.Windows.Forms.TrackBar Ypos;
+        private System.Windows.Forms.TrackBar Xpos;
+        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.Label rotZLable;
+        private System.Windows.Forms.Label rotYLable;
+        private System.Windows.Forms.Label rotXLable;
+        private System.Windows.Forms.Label ZposLable;
+        private System.Windows.Forms.Label YposLable;
+        private System.Windows.Forms.Label XposLable;
+        private System.Windows.Forms.Label scaleLable;
+        private System.Windows.Forms.TrackBar scale;
     }
 }
 

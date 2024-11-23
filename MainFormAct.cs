@@ -47,33 +47,6 @@ namespace MoeMikuManage
             }
         }
 
-        private void btnRotate_Click(object sender, EventArgs e)
-        {
-            if (thread == null)
-            {
-                thread = new Thread(() =>
-                {
-                    while (true)
-                    {
-                        x_angle_3d_model += 0.05f;
-                        y_angle_3d_model -= 0.05f;
-                        z_angle_3d_model += 0.05f;
-                        glControl1.Invalidate();
-                        Thread.Sleep(100);
-                    }
-                });
-                thread.Start();
-            }
-            else
-            {
-                thread.Abort();
-                x_angle_3d_model = 0;
-                y_angle_3d_model = 0;
-                z_angle_3d_model = 0;
-                thread = null;
-                glControl1.Invalidate();
-            }
-        }
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
 

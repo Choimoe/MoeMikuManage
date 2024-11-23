@@ -178,7 +178,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;loadModel.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>17</value>
   </data>
   <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -235,7 +235,7 @@
     <value>2</value>
   </data>
   <data name="editModel.Text" xml:space="preserve">
-    <value>编辑模型</value>
+    <value>启用模型编辑</value>
   </data>
   <data name="&gt;&gt;editModel.Name" xml:space="preserve">
     <value>editModel</value>
@@ -247,7 +247,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;editModel.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>16</value>
   </data>
   <data name="DirInfo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -265,7 +265,7 @@
     <value>True</value>
   </data>
   <data name="DirInfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>290, 143</value>
+    <value>290, 136</value>
   </data>
   <data name="DirInfo.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -378,6 +378,402 @@
   <data name="&gt;&gt;FileSplit.Panel1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="scaleLable.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="scaleLable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="scaleLable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 371</value>
+  </data>
+  <data name="scaleLable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="scaleLable.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="scaleLable.Text" xml:space="preserve">
+    <value>scale</value>
+  </data>
+  <data name="&gt;&gt;scaleLable.Name" xml:space="preserve">
+    <value>scaleLable</value>
+  </data>
+  <data name="&gt;&gt;scaleLable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;scaleLable.Parent" xml:space="preserve">
+    <value>FileSplit.Panel2</value>
+  </data>
+  <data name="&gt;&gt;scaleLable.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="scale.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="scale.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 371</value>
+  </data>
+  <data name="scale.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 45</value>
+  </data>
+  <data name="scale.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;scale.Name" xml:space="preserve">
+    <value>scale</value>
+  </data>
+  <data name="&gt;&gt;scale.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;scale.Parent" xml:space="preserve">
+    <value>FileSplit.Panel2</value>
+  </data>
+  <data name="&gt;&gt;scale.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="rotZLable.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rotZLable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rotZLable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 320</value>
+  </data>
+  <data name="rotZLable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 12</value>
+  </data>
+  <data name="rotZLable.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="rotZLable.Text" xml:space="preserve">
+    <value>rotz</value>
+  </data>
+  <data name="&gt;&gt;rotZLable.Name" xml:space="preserve">
+    <value>rotZLable</value>
+  </data>
+  <data name="&gt;&gt;rotZLable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rotZLable.Parent" xml:space="preserve">
+    <value>FileSplit.Panel2</value>
+  </data>
+  <data name="&gt;&gt;rotZLable.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="rotYLable.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rotYLable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rotYLable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 269</value>
+  </data>
+  <data name="rotYLable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 12</value>
+  </data>
+  <data name="rotYLable.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="rotYLable.Text" xml:space="preserve">
+    <value>roty</value>
+  </data>
+  <data name="&gt;&gt;rotYLable.Name" xml:space="preserve">
+    <value>rotYLable</value>
+  </data>
+  <data name="&gt;&gt;rotYLable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rotYLable.Parent" xml:space="preserve">
+    <value>FileSplit.Panel2</value>
+  </data>
+  <data name="&gt;&gt;rotYLable.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="rotXLable.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rotXLable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rotXLable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 218</value>
+  </data>
+  <data name="rotXLable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 12</value>
+  </data>
+  <data name="rotXLable.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="rotXLable.Text" xml:space="preserve">
+    <value>rotx</value>
+  </data>
+  <data name="&gt;&gt;rotXLable.Name" xml:space="preserve">
+    <value>rotXLable</value>
+  </data>
+  <data name="&gt;&gt;rotXLable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rotXLable.Parent" xml:space="preserve">
+    <value>FileSplit.Panel2</value>
+  </data>
+  <data name="&gt;&gt;rotXLable.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ZposLable.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ZposLable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ZposLable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 167</value>
+  </data>
+  <data name="ZposLable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>11, 12</value>
+  </data>
+  <data name="ZposLable.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="ZposLable.Text" xml:space="preserve">
+    <value>z</value>
+  </data>
+  <data name="&gt;&gt;ZposLable.Name" xml:space="preserve">
+    <value>ZposLable</value>
+  </data>
+  <data name="&gt;&gt;ZposLable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ZposLable.Parent" xml:space="preserve">
+    <value>FileSplit.Panel2</value>
+  </data>
+  <data name="&gt;&gt;ZposLable.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="YposLable.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="YposLable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="YposLable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 116</value>
+  </data>
+  <data name="YposLable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>11, 12</value>
+  </data>
+  <data name="YposLable.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="YposLable.Text" xml:space="preserve">
+    <value>y</value>
+  </data>
+  <data name="&gt;&gt;YposLable.Name" xml:space="preserve">
+    <value>YposLable</value>
+  </data>
+  <data name="&gt;&gt;YposLable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;YposLable.Parent" xml:space="preserve">
+    <value>FileSplit.Panel2</value>
+  </data>
+  <data name="&gt;&gt;YposLable.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="XposLable.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="XposLable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 65</value>
+  </data>
+  <data name="XposLable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>11, 12</value>
+  </data>
+  <data name="XposLable.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="XposLable.Text" xml:space="preserve">
+    <value>x</value>
+  </data>
+  <data name="&gt;&gt;XposLable.Name" xml:space="preserve">
+    <value>XposLable</value>
+  </data>
+  <data name="&gt;&gt;XposLable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;XposLable.Parent" xml:space="preserve">
+    <value>FileSplit.Panel2</value>
+  </data>
+  <data name="&gt;&gt;XposLable.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="rotX.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rotX.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 218</value>
+  </data>
+  <data name="rotX.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 45</value>
+  </data>
+  <data name="rotX.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;rotX.Name" xml:space="preserve">
+    <value>rotX</value>
+  </data>
+  <data name="&gt;&gt;rotX.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rotX.Parent" xml:space="preserve">
+    <value>FileSplit.Panel2</value>
+  </data>
+  <data name="&gt;&gt;rotX.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="rotY.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rotY.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 269</value>
+  </data>
+  <data name="rotY.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 45</value>
+  </data>
+  <data name="rotY.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;rotY.Name" xml:space="preserve">
+    <value>rotY</value>
+  </data>
+  <data name="&gt;&gt;rotY.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rotY.Parent" xml:space="preserve">
+    <value>FileSplit.Panel2</value>
+  </data>
+  <data name="&gt;&gt;rotY.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="rotZ.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rotZ.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 320</value>
+  </data>
+  <data name="rotZ.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 45</value>
+  </data>
+  <data name="rotZ.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;rotZ.Name" xml:space="preserve">
+    <value>rotZ</value>
+  </data>
+  <data name="&gt;&gt;rotZ.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rotZ.Parent" xml:space="preserve">
+    <value>FileSplit.Panel2</value>
+  </data>
+  <data name="&gt;&gt;rotZ.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="Zpos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Zpos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 167</value>
+  </data>
+  <data name="Zpos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 45</value>
+  </data>
+  <data name="Zpos.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;Zpos.Name" xml:space="preserve">
+    <value>Zpos</value>
+  </data>
+  <data name="&gt;&gt;Zpos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Zpos.Parent" xml:space="preserve">
+    <value>FileSplit.Panel2</value>
+  </data>
+  <data name="&gt;&gt;Zpos.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="Ypos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Ypos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 116</value>
+  </data>
+  <data name="Ypos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 45</value>
+  </data>
+  <data name="Ypos.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;Ypos.Name" xml:space="preserve">
+    <value>Ypos</value>
+  </data>
+  <data name="&gt;&gt;Ypos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Ypos.Parent" xml:space="preserve">
+    <value>FileSplit.Panel2</value>
+  </data>
+  <data name="&gt;&gt;Ypos.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="Xpos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Xpos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 65</value>
+  </data>
+  <data name="Xpos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 45</value>
+  </data>
+  <data name="Xpos.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;Xpos.Name" xml:space="preserve">
+    <value>Xpos</value>
+  </data>
+  <data name="&gt;&gt;Xpos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Xpos.Parent" xml:space="preserve">
+    <value>FileSplit.Panel2</value>
+  </data>
+  <data name="&gt;&gt;Xpos.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="trackBar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 65</value>
+  </data>
+  <data name="trackBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 45</value>
+  </data>
+  <data name="trackBar1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;trackBar1.Name" xml:space="preserve">
+    <value>trackBar1</value>
+  </data>
+  <data name="&gt;&gt;trackBar1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trackBar1.Parent" xml:space="preserve">
+    <value>FileSplit.Panel2</value>
+  </data>
+  <data name="&gt;&gt;trackBar1.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
   <data name="treeView1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -385,7 +781,7 @@
     <value>0, 48</value>
   </data>
   <data name="treeView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>290, 401</value>
+    <value>290, 408</value>
   </data>
   <data name="treeView1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -400,7 +796,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;treeView1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>15</value>
   </data>
   <data name="&gt;&gt;FileSplit.Panel2.Name" xml:space="preserve">
     <value>FileSplit.Panel2</value>
@@ -418,7 +814,7 @@
     <value>290, 621</value>
   </data>
   <data name="FileSplit.SplitterDistance" type="System.Int32, mscorlib">
-    <value>168</value>
+    <value>161</value>
   </data>
   <data name="FileSplit.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>

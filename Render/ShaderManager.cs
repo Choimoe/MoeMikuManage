@@ -1,4 +1,5 @@
-﻿using OpenTK.Graphics.OpenGL;
+﻿using OpenTK;
+using OpenTK.Graphics.OpenGL;
 using System.IO;
 
 namespace MoeMikuManage
@@ -53,6 +54,56 @@ namespace MoeMikuManage
                 System.Console.WriteLine(infoLog);
             }
         }
+        private void SetUniformVariables()
+        {
+            Matrix4 perspective = Matrix4.CreatePerspectiveFieldOfView(1.04f, glControl1.AspectRatio, 0.1f, 1000);
+            Matrix4 lookat = Matrix4.LookAt(cameraPos, cameraTarget, Vector3.UnitY);
 
+            int modelAddress = GL.GetUniformLocation(ShaderObject, "model");
+            int viewAddress = GL.GetUniformLocation(ShaderObject, "view");
+            int projectionAddress = GL.GetUniformLocation(ShaderObject, "projection");
+
+            Matrix4 translation = Matrix4.CreateTranslation(modelPosition);
+            Matrix4 rotationX = Matrix4.CreateRotationX(modelRotation.X);
+            Matrix4 rotationY = Matrix4.CreateRotationY(modelRotation.Y);
+            Matrix4 rotationZ = Matrix4.CreateRotationZ(modelRotation.Z);
+            Matrix4 scale = Matrix4.CreateScale(modelScale);
+
+            Matrix4 model = scale * rotationX * rotationY * rotationZ * translation;
+
+            GL.UniformMatrix4(modelAddress, false, ref model);
+            GL.UniformMatrix4(viewAddress, false, ref lookat);
+            GL.UniformMatrix4(projectionAddress, false, ref perspective);
+
+            GL.ActiveTexture(TextureUnit.Texture0);
+            GL.BindTexture(TextureTarget.Texture2D, TextureObject);
+
+            int texLocation = GL.GetUniformLocation(ShaderObject, "texture_diffuse1");
+            GL.Uniform1(texLocation, 0);
+
+            int location = GL.GetUniformLocation(ShaderObject, "material.ambient");
+            GL.Uniform3(location, modelMat.ambient);
+            location = GL.GetUniformLocation(ShaderObject, "material.diffuse");
+            GL.Uniform3(location, modelMat.diffuse);
+            location = GL.GetUniformLocation(ShaderObject, "material.specular");
+            GL.Uniform3(location, modelMat.specular);
+            location = GL.GetUniformLocation(ShaderObject, "material.shininess");
+            GL.Uniform1(location, modelMat.shininess);
+
+            location = GL.GetUniformLocation(ShaderObject, "light.ambient");
+            GL.Uniform3(location, light.ambient);
+            location = GL.GetUniformLocation(ShaderObject, "light.diffuse");
+            GL.Uniform3(location, light.diffuse);
+            location = GL.GetUniformLocation(ShaderObject, "light.specular");
+            GL.Uniform3(location, light.specular);
+            location = GL.GetUniformLocation(ShaderObject, "light.direction");
+            GL.Uniform3(location, light.direction);
+            location = GL.GetUniformLocation(ShaderObject, "light.intensity");
+            GL.Uniform1(location, light.intensity);
+
+            location = GL.GetUniformLocation(ShaderObject, "camPos");
+            GL.Uniform3(location, cameraPos);
+        }
     }
+
 }
