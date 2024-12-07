@@ -33,6 +33,13 @@ namespace MoeMikuManage
         int VertexBufferObject, VertexArrayObject, ShaderObject, TextureObject;
         float x_angle_3d_model = 0, y_angle_3d_model = 0, z_angle_3d_model = 0;
 
+        private Quaternion startQuaternion, endQuaternion;
+        private Vector3 startPosition, endPosition;
+        private float startModelScale, endModelScale;
+
+
+        private int easeInOutOpt = 0;
+
 
         Material modelMat;
         DirectionalLight light;
@@ -70,6 +77,13 @@ namespace MoeMikuManage
         {
 
         }
+        private float EaseInOut(float t)
+        {
+            if (easeInOutOpt == 1)
+                return 0.5f * (1f - (float)Math.Cos(Math.PI * t));
+            else return t;
+        }
+
 
         private void btnRotate_Click(object sender, EventArgs e)
         {
@@ -116,6 +130,107 @@ namespace MoeMikuManage
         private void trackBar2_Scroll(object sender, EventArgs e)
         {
 
+        }
+
+        private void animeSaveStart_Click(object sender, EventArgs e)
+        {
+            Quaternion qx = Quaternion.FromAxisAngle(Vector3.UnitX, modelRotation.X);
+            Quaternion qy = Quaternion.FromAxisAngle(Vector3.UnitY, modelRotation.Y);
+            Quaternion qz = Quaternion.FromAxisAngle(Vector3.UnitZ, modelRotation.Z);
+
+            Quaternion quat = qx * qy * qz;
+            // startQuaternion = Quaternion.Normalize(quat);
+            startQuaternion = quat;
+            startPosition = modelPosition;
+            startModelScale = modelScale;
+            changeDebugText(modelPosition, modelRotation);
+        }
+
+        private void 设置缓入缓出ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            easeInOutOpt = 1 - easeInOutOpt;
+        }
+
+        private void animeSaveEnd_Click(object sender, EventArgs e)
+        {
+            Quaternion qx = Quaternion.FromAxisAngle(Vector3.UnitX, modelRotation.X);
+            Quaternion qy = Quaternion.FromAxisAngle(Vector3.UnitY, modelRotation.Y);
+            Quaternion qz = Quaternion.FromAxisAngle(Vector3.UnitZ, modelRotation.Z);
+
+            Quaternion quat = qx * qy * qz;
+            // endQuaternion = Quaternion.Normalize(quat);
+            endQuaternion = quat;
+            endPosition = modelPosition;
+            endModelScale = modelScale;
+            changeDebugText(modelPosition, modelRotation);
+        }
+
+        private void animeStart_Click(object sender, EventArgs e)
+        {
+            if (thread == null)
+            {
+                thread = new Thread(() =>
+                {
+                    float t = 0f;
+                    float duration = 1f;
+                    Quaternion currentQuaternion;
+                    Vector3 currentPosition;
+
+                    while (true)
+                    {
+                        t += 0.01f / duration;
+                        if (t > 1f)
+                        {
+                            t = 0f;
+                            (endQuaternion, startQuaternion) = (startQuaternion, endQuaternion);
+                            (endPosition, startPosition) = (startPosition, endPosition);
+                            (endModelScale, startModelScale) = (startModelScale, endModelScale);
+                        }
+
+                        currentQuaternion = Quaternion.Slerp(startQuaternion, endQuaternion, EaseInOut(t));
+                        modelScale = startModelScale + (endModelScale - startModelScale) * EaseInOut(t);
+
+                        currentPosition = Vector3.Lerp(startPosition, endPosition, EaseInOut(t));
+
+                        modelPosition = currentPosition;
+                        modelRotation = currentQuaternion.ToEulerAngles();
+                        changeDisplayText(t);
+
+                        glControl1.Invalidate();
+
+                        Thread.Sleep(5);
+                    }
+                });
+                thread.Start();
+            }
+            else
+            {
+                thread.Abort();
+                thread = null;
+
+                modelPosition = startPosition;
+                modelRotation = new Vector3(startQuaternion.X, startQuaternion.Y, startQuaternion.Z);
+                changeTextOutput();
+
+                glControl1.Invalidate();
+            }
+        }
+
+        private void changeDisplayText(float time)
+        {
+            string modelPosText = $"modelPosition: X: {modelPosition.X:F2}, Y: {modelPosition.Y:F2}, Z: {modelPosition.Z:F2}";
+            string modelRotText = $"modelRotation: X: {modelRotation.X:F2}, Y: {modelRotation.Y:F2}, Z: {modelRotation.Z:F2}";
+            string curTime = $"curTime: t = {time:F2} (easeInOut = {EaseInOut(time):F2})";
+            changeTextOutput();
+            DirInfo.Text = DirInfo.Text + Environment.NewLine + modelPosText + Environment.NewLine + modelRotText + Environment.NewLine + curTime;
+        }
+
+        private void changeDebugText(Vector3 A, Vector3 B)
+        {
+            string modelPosText = $"curPosition: X: {A.X:F2}, Y: {A.Y:F2}, Z: {A.Z:F2}";
+            string modelRotText = $"curRotation: X: {B.X:F2}, Y: {B.Y:F2}, Z: {B.Z:F2}";
+            changeTextOutput();
+            DirInfo.Text = DirInfo.Text + Environment.NewLine + modelPosText + Environment.NewLine + modelRotText;
         }
 
         Vector3 cameraDir = new Vector3(0, 0, 0);

@@ -178,7 +178,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;loadModel.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -247,7 +247,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;editModel.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="DirInfo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -306,35 +306,23 @@
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>165, 17</value>
   </metadata>
-  <data name="加载模型ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 22</value>
-  </data>
-  <data name="加载模型ToolStripMenuItem.Text" xml:space="preserve">
-    <value>加载模型</value>
-  </data>
-  <data name="清除模型ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 22</value>
-  </data>
-  <data name="清除模型ToolStripMenuItem.Text" xml:space="preserve">
-    <value>清除模型</value>
-  </data>
   <data name="文件ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 21</value>
   </data>
   <data name="文件ToolStripMenuItem.Text" xml:space="preserve">
     <value>文件</value>
   </data>
-  <data name="检查更新ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 22</value>
+  <data name="设置缓入缓出ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
   </data>
-  <data name="检查更新ToolStripMenuItem.Text" xml:space="preserve">
-    <value>检查更新</value>
+  <data name="设置缓入缓出ToolStripMenuItem.Text" xml:space="preserve">
+    <value>设置缓入缓出</value>
   </data>
-  <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 22</value>
+  <data name="动画ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 21</value>
   </data>
-  <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
-    <value>About</value>
+  <data name="动画ToolStripMenuItem.Text" xml:space="preserve">
+    <value>动画</value>
   </data>
   <data name="关于ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 21</value>
@@ -378,6 +366,198 @@
   <data name="&gt;&gt;FileSplit.Panel1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="animePane.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="animePane.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 422</value>
+  </data>
+  <data name="animeStart.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="animeStart.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="animeStart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="animeStart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 34</value>
+  </data>
+  <data name="animeStart.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="animeStart.Text" xml:space="preserve">
+    <value>播放</value>
+  </data>
+  <data name="&gt;&gt;animeStart.Name" xml:space="preserve">
+    <value>animeStart</value>
+  </data>
+  <data name="&gt;&gt;animeStart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;animeStart.Parent" xml:space="preserve">
+    <value>animePane.Panel1</value>
+  </data>
+  <data name="&gt;&gt;animeStart.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;animePane.Panel1.Name" xml:space="preserve">
+    <value>animePane.Panel1</value>
+  </data>
+  <data name="&gt;&gt;animePane.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;animePane.Panel1.Parent" xml:space="preserve">
+    <value>animePane</value>
+  </data>
+  <data name="&gt;&gt;animePane.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="animeStartEndSet.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="animeStartEndSet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="animeSaveStart.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="animeSaveStart.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="animeSaveStart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="animeSaveStart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 34</value>
+  </data>
+  <data name="animeSaveStart.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="animeSaveStart.Text" xml:space="preserve">
+    <value>保存起始位置</value>
+  </data>
+  <data name="&gt;&gt;animeSaveStart.Name" xml:space="preserve">
+    <value>animeSaveStart</value>
+  </data>
+  <data name="&gt;&gt;animeSaveStart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;animeSaveStart.Parent" xml:space="preserve">
+    <value>animeStartEndSet.Panel1</value>
+  </data>
+  <data name="&gt;&gt;animeSaveStart.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;animeStartEndSet.Panel1.Name" xml:space="preserve">
+    <value>animeStartEndSet.Panel1</value>
+  </data>
+  <data name="&gt;&gt;animeStartEndSet.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;animeStartEndSet.Panel1.Parent" xml:space="preserve">
+    <value>animeStartEndSet</value>
+  </data>
+  <data name="&gt;&gt;animeStartEndSet.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="animeSaveEnd.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="animeSaveEnd.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="animeSaveEnd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="animeSaveEnd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 34</value>
+  </data>
+  <data name="animeSaveEnd.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="animeSaveEnd.Text" xml:space="preserve">
+    <value>保存末位置</value>
+  </data>
+  <data name="&gt;&gt;animeSaveEnd.Name" xml:space="preserve">
+    <value>animeSaveEnd</value>
+  </data>
+  <data name="&gt;&gt;animeSaveEnd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;animeSaveEnd.Parent" xml:space="preserve">
+    <value>animeStartEndSet.Panel2</value>
+  </data>
+  <data name="&gt;&gt;animeSaveEnd.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;animeStartEndSet.Panel2.Name" xml:space="preserve">
+    <value>animeStartEndSet.Panel2</value>
+  </data>
+  <data name="&gt;&gt;animeStartEndSet.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;animeStartEndSet.Panel2.Parent" xml:space="preserve">
+    <value>animeStartEndSet</value>
+  </data>
+  <data name="&gt;&gt;animeStartEndSet.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="animeStartEndSet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 34</value>
+  </data>
+  <data name="animeStartEndSet.SplitterDistance" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="animeStartEndSet.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;animeStartEndSet.Name" xml:space="preserve">
+    <value>animeStartEndSet</value>
+  </data>
+  <data name="&gt;&gt;animeStartEndSet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;animeStartEndSet.Parent" xml:space="preserve">
+    <value>animePane.Panel2</value>
+  </data>
+  <data name="&gt;&gt;animeStartEndSet.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;animePane.Panel2.Name" xml:space="preserve">
+    <value>animePane.Panel2</value>
+  </data>
+  <data name="&gt;&gt;animePane.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;animePane.Panel2.Parent" xml:space="preserve">
+    <value>animePane</value>
+  </data>
+  <data name="&gt;&gt;animePane.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="animePane.Size" type="System.Drawing.Size, System.Drawing">
+    <value>290, 34</value>
+  </data>
+  <data name="animePane.SplitterDistance" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="animePane.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;animePane.Name" xml:space="preserve">
+    <value>animePane</value>
+  </data>
+  <data name="&gt;&gt;animePane.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;animePane.Parent" xml:space="preserve">
+    <value>FileSplit.Panel2</value>
+  </data>
+  <data name="&gt;&gt;animePane.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="scaleLable.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -406,7 +586,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;scaleLable.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="scale.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -430,7 +610,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;scale.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="rotZLable.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -460,7 +640,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;rotZLable.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="rotYLable.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -490,7 +670,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;rotYLable.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="rotXLable.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -520,7 +700,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;rotXLable.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="ZposLable.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -550,7 +730,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;ZposLable.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="YposLable.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -580,7 +760,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;YposLable.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="XposLable.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -607,7 +787,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;XposLable.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="rotX.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -631,7 +811,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;rotX.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="rotY.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -655,7 +835,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;rotY.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="rotZ.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -679,7 +859,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;rotZ.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="Zpos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -703,7 +883,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;Zpos.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="Ypos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -727,7 +907,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;Ypos.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="Xpos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -751,7 +931,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;Xpos.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="trackBar1.Location" type="System.Drawing.Point, System.Drawing">
     <value>82, 65</value>
@@ -772,7 +952,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;trackBar1.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="treeView1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -796,7 +976,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;treeView1.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="&gt;&gt;FileSplit.Panel2.Name" xml:space="preserve">
     <value>FileSplit.Panel2</value>
@@ -875,6 +1055,30 @@
   </data>
   <data name="&gt;&gt;MainContSplit.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="加载模型ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="加载模型ToolStripMenuItem.Text" xml:space="preserve">
+    <value>加载模型</value>
+  </data>
+  <data name="清除模型ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="清除模型ToolStripMenuItem.Text" xml:space="preserve">
+    <value>清除模型</value>
+  </data>
+  <data name="检查更新ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="检查更新ToolStripMenuItem.Text" xml:space="preserve">
+    <value>检查更新</value>
+  </data>
+  <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
+    <value>About</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1507,6 +1711,18 @@
     <value>aboutToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;aboutToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;动画ToolStripMenuItem.Name" xml:space="preserve">
+    <value>动画ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;动画ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;设置缓入缓出ToolStripMenuItem.Name" xml:space="preserve">
+    <value>设置缓入缓出ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;设置缓入缓出ToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

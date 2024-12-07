@@ -34,6 +34,11 @@ namespace MoeMikuManage
             this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.检查更新ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.animePane = new System.Windows.Forms.SplitContainer();
+            this.animeStart = new System.Windows.Forms.Button();
+            this.animeStartEndSet = new System.Windows.Forms.SplitContainer();
+            this.animeSaveStart = new System.Windows.Forms.Button();
+            this.animeSaveEnd = new System.Windows.Forms.Button();
             this.scaleLable = new System.Windows.Forms.Label();
             this.scale = new System.Windows.Forms.TrackBar();
             this.rotZLable = new System.Windows.Forms.Label();
@@ -50,6 +55,8 @@ namespace MoeMikuManage
             this.Xpos = new System.Windows.Forms.TrackBar();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.treeView1 = new System.Windows.Forms.TreeView();
+            this.动画ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.设置缓入缓出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.MainContSplit)).BeginInit();
             this.MainContSplit.Panel1.SuspendLayout();
             this.MainContSplit.Panel2.SuspendLayout();
@@ -59,6 +66,14 @@ namespace MoeMikuManage
             this.FileSplit.Panel2.SuspendLayout();
             this.FileSplit.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.animePane)).BeginInit();
+            this.animePane.Panel1.SuspendLayout();
+            this.animePane.Panel2.SuspendLayout();
+            this.animePane.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.animeStartEndSet)).BeginInit();
+            this.animeStartEndSet.Panel1.SuspendLayout();
+            this.animeStartEndSet.Panel2.SuspendLayout();
+            this.animeStartEndSet.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.scale)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rotX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rotY)).BeginInit();
@@ -144,6 +159,7 @@ namespace MoeMikuManage
             // 
             // FileSplit.Panel2
             // 
+            this.FileSplit.Panel2.Controls.Add(this.animePane);
             this.FileSplit.Panel2.Controls.Add(this.scaleLable);
             this.FileSplit.Panel2.Controls.Add(this.scale);
             this.FileSplit.Panel2.Controls.Add(this.rotZLable);
@@ -168,6 +184,7 @@ namespace MoeMikuManage
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.文件ToolStripMenuItem,
+            this.动画ToolStripMenuItem,
             this.关于ToolStripMenuItem});
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
@@ -208,6 +225,53 @@ namespace MoeMikuManage
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
+            // 
+            // animePane
+            // 
+            resources.ApplyResources(this.animePane, "animePane");
+            this.animePane.Name = "animePane";
+            // 
+            // animePane.Panel1
+            // 
+            this.animePane.Panel1.Controls.Add(this.animeStart);
+            // 
+            // animePane.Panel2
+            // 
+            this.animePane.Panel2.Controls.Add(this.animeStartEndSet);
+            // 
+            // animeStart
+            // 
+            resources.ApplyResources(this.animeStart, "animeStart");
+            this.animeStart.Name = "animeStart";
+            this.animeStart.UseVisualStyleBackColor = true;
+            this.animeStart.Click += new System.EventHandler(this.animeStart_Click);
+            // 
+            // animeStartEndSet
+            // 
+            resources.ApplyResources(this.animeStartEndSet, "animeStartEndSet");
+            this.animeStartEndSet.Name = "animeStartEndSet";
+            // 
+            // animeStartEndSet.Panel1
+            // 
+            this.animeStartEndSet.Panel1.Controls.Add(this.animeSaveStart);
+            // 
+            // animeStartEndSet.Panel2
+            // 
+            this.animeStartEndSet.Panel2.Controls.Add(this.animeSaveEnd);
+            // 
+            // animeSaveStart
+            // 
+            resources.ApplyResources(this.animeSaveStart, "animeSaveStart");
+            this.animeSaveStart.Name = "animeSaveStart";
+            this.animeSaveStart.UseVisualStyleBackColor = true;
+            this.animeSaveStart.Click += new System.EventHandler(this.animeSaveStart_Click);
+            // 
+            // animeSaveEnd
+            // 
+            resources.ApplyResources(this.animeSaveEnd, "animeSaveEnd");
+            this.animeSaveEnd.Name = "animeSaveEnd";
+            this.animeSaveEnd.UseVisualStyleBackColor = true;
+            this.animeSaveEnd.Click += new System.EventHandler(this.animeSaveEnd_Click);
             // 
             // scaleLable
             // 
@@ -307,6 +371,19 @@ namespace MoeMikuManage
             resources.ApplyResources(this.treeView1, "treeView1");
             this.treeView1.Name = "treeView1";
             // 
+            // 动画ToolStripMenuItem
+            // 
+            this.动画ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.设置缓入缓出ToolStripMenuItem});
+            this.动画ToolStripMenuItem.Name = "动画ToolStripMenuItem";
+            resources.ApplyResources(this.动画ToolStripMenuItem, "动画ToolStripMenuItem");
+            // 
+            // 设置缓入缓出ToolStripMenuItem
+            // 
+            this.设置缓入缓出ToolStripMenuItem.Name = "设置缓入缓出ToolStripMenuItem";
+            resources.ApplyResources(this.设置缓入缓出ToolStripMenuItem, "设置缓入缓出ToolStripMenuItem");
+            this.设置缓入缓出ToolStripMenuItem.Click += new System.EventHandler(this.设置缓入缓出ToolStripMenuItem_Click);
+            // 
             // ModelViewer
             // 
             this.AcceptButton = this.loadModel;
@@ -334,6 +411,17 @@ namespace MoeMikuManage
             this.FileSplit.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.animePane.Panel1.ResumeLayout(false);
+            this.animePane.Panel1.PerformLayout();
+            this.animePane.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.animePane)).EndInit();
+            this.animePane.ResumeLayout(false);
+            this.animeStartEndSet.Panel1.ResumeLayout(false);
+            this.animeStartEndSet.Panel1.PerformLayout();
+            this.animeStartEndSet.Panel2.ResumeLayout(false);
+            this.animeStartEndSet.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.animeStartEndSet)).EndInit();
+            this.animeStartEndSet.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.scale)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rotX)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rotY)).EndInit();
@@ -380,6 +468,13 @@ namespace MoeMikuManage
         private System.Windows.Forms.Label XposLable;
         private System.Windows.Forms.Label scaleLable;
         private System.Windows.Forms.TrackBar scale;
+        private System.Windows.Forms.SplitContainer animePane;
+        private System.Windows.Forms.SplitContainer animeStartEndSet;
+        private System.Windows.Forms.Button animeStart;
+        private System.Windows.Forms.Button animeSaveStart;
+        private System.Windows.Forms.Button animeSaveEnd;
+        private System.Windows.Forms.ToolStripMenuItem 动画ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 设置缓入缓出ToolStripMenuItem;
     }
 }
 
