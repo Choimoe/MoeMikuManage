@@ -64,12 +64,26 @@ namespace MoeMikuManage
             int projectionAddress = GL.GetUniformLocation(ShaderObject, "projection");
 
             Matrix4 translation = Matrix4.CreateTranslation(modelPosition);
-            Matrix4 rotationX = Matrix4.CreateRotationX(modelRotation.X);
-            Matrix4 rotationY = Matrix4.CreateRotationY(modelRotation.Y);
-            Matrix4 rotationZ = Matrix4.CreateRotationZ(modelRotation.Z);
+            
+            
+            Matrix4.CreateTranslation(modelPosition);
+            Matrix4 rotationMatrix;
+            if (animating == 1)
+            {
+                rotationMatrix = Matrix4.CreateFromQuaternion(curQuaternion);
+            }
+            else
+            {
+                Quaternion qx = Quaternion.FromAxisAngle(Vector3.UnitX, modelRotation.X);
+                Quaternion qy = Quaternion.FromAxisAngle(Vector3.UnitY, modelRotation.Y);
+                Quaternion qz = Quaternion.FromAxisAngle(Vector3.UnitZ, modelRotation.Z);
+                Quaternion rotationQuat = qx * qy * qz;
+                rotationMatrix = Matrix4.CreateFromQuaternion(rotationQuat);
+            }
+            
             Matrix4 scale = Matrix4.CreateScale(modelScale);
 
-            Matrix4 model = scale * rotationX * rotationY * rotationZ * translation;
+            Matrix4 model = scale * rotationMatrix * translation;
 
             GL.UniformMatrix4(modelAddress, false, ref model);
             GL.UniformMatrix4(viewAddress, false, ref lookat);
