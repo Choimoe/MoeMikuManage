@@ -31,6 +31,8 @@ namespace MoeMikuManage
             this.文件ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.加载模型ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.清除模型ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.动画ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.设置缓入缓出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.检查更新ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,8 +57,7 @@ namespace MoeMikuManage
             this.Xpos = new System.Windows.Forms.TrackBar();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.treeView1 = new System.Windows.Forms.TreeView();
-            this.动画ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.设置缓入缓出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.启用动画ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.MainContSplit)).BeginInit();
             this.MainContSplit.Panel1.SuspendLayout();
             this.MainContSplit.Panel2.SuspendLayout();
@@ -207,6 +208,20 @@ namespace MoeMikuManage
             this.清除模型ToolStripMenuItem.Name = "清除模型ToolStripMenuItem";
             resources.ApplyResources(this.清除模型ToolStripMenuItem, "清除模型ToolStripMenuItem");
             // 
+            // 动画ToolStripMenuItem
+            // 
+            this.动画ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.启用动画ToolStripMenuItem,
+            this.设置缓入缓出ToolStripMenuItem});
+            this.动画ToolStripMenuItem.Name = "动画ToolStripMenuItem";
+            resources.ApplyResources(this.动画ToolStripMenuItem, "动画ToolStripMenuItem");
+            // 
+            // 设置缓入缓出ToolStripMenuItem
+            // 
+            this.设置缓入缓出ToolStripMenuItem.Name = "设置缓入缓出ToolStripMenuItem";
+            resources.ApplyResources(this.设置缓入缓出ToolStripMenuItem, "设置缓入缓出ToolStripMenuItem");
+            this.设置缓入缓出ToolStripMenuItem.Click += new System.EventHandler(this.设置缓入缓出ToolStripMenuItem_Click);
+            // 
             // 关于ToolStripMenuItem
             // 
             this.关于ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -242,8 +257,9 @@ namespace MoeMikuManage
             // animeStart
             // 
             resources.ApplyResources(this.animeStart, "animeStart");
+            this.animeStart.BackColor = System.Drawing.Color.Snow;
             this.animeStart.Name = "animeStart";
-            this.animeStart.UseVisualStyleBackColor = true;
+            this.animeStart.UseVisualStyleBackColor = false;
             this.animeStart.Click += new System.EventHandler(this.animeStart_Click);
             // 
             // animeStartEndSet
@@ -262,15 +278,17 @@ namespace MoeMikuManage
             // animeSaveStart
             // 
             resources.ApplyResources(this.animeSaveStart, "animeSaveStart");
+            this.animeSaveStart.BackColor = System.Drawing.Color.Snow;
             this.animeSaveStart.Name = "animeSaveStart";
-            this.animeSaveStart.UseVisualStyleBackColor = true;
+            this.animeSaveStart.UseVisualStyleBackColor = false;
             this.animeSaveStart.Click += new System.EventHandler(this.animeSaveStart_Click);
             // 
             // animeSaveEnd
             // 
             resources.ApplyResources(this.animeSaveEnd, "animeSaveEnd");
+            this.animeSaveEnd.BackColor = System.Drawing.Color.Snow;
             this.animeSaveEnd.Name = "animeSaveEnd";
-            this.animeSaveEnd.UseVisualStyleBackColor = true;
+            this.animeSaveEnd.UseVisualStyleBackColor = false;
             this.animeSaveEnd.Click += new System.EventHandler(this.animeSaveEnd_Click);
             // 
             // scaleLable
@@ -371,18 +389,10 @@ namespace MoeMikuManage
             resources.ApplyResources(this.treeView1, "treeView1");
             this.treeView1.Name = "treeView1";
             // 
-            // 动画ToolStripMenuItem
+            // 启用动画ToolStripMenuItem
             // 
-            this.动画ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.设置缓入缓出ToolStripMenuItem});
-            this.动画ToolStripMenuItem.Name = "动画ToolStripMenuItem";
-            resources.ApplyResources(this.动画ToolStripMenuItem, "动画ToolStripMenuItem");
-            // 
-            // 设置缓入缓出ToolStripMenuItem
-            // 
-            this.设置缓入缓出ToolStripMenuItem.Name = "设置缓入缓出ToolStripMenuItem";
-            resources.ApplyResources(this.设置缓入缓出ToolStripMenuItem, "设置缓入缓出ToolStripMenuItem");
-            this.设置缓入缓出ToolStripMenuItem.Click += new System.EventHandler(this.设置缓入缓出ToolStripMenuItem_Click);
+            this.启用动画ToolStripMenuItem.Name = "启用动画ToolStripMenuItem";
+            resources.ApplyResources(this.启用动画ToolStripMenuItem, "启用动画ToolStripMenuItem");
             // 
             // ModelViewer
             // 
@@ -475,6 +485,7 @@ namespace MoeMikuManage
         private System.Windows.Forms.Button animeSaveEnd;
         private System.Windows.Forms.ToolStripMenuItem 动画ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 设置缓入缓出ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 启用动画ToolStripMenuItem;
     }
 }
 

@@ -156,11 +156,14 @@
   <data name="loadModel.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
+  <data name="loadModel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
   <data name="loadModel.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
   <data name="loadModel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>290, 24</value>
+    <value>290, 29</value>
   </data>
   <data name="loadModel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -225,11 +228,14 @@
   <data name="editModel.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
+  <data name="editModel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
   <data name="editModel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 24</value>
+    <value>0, 29</value>
   </data>
   <data name="editModel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>290, 24</value>
+    <value>290, 29</value>
   </data>
   <data name="editModel.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -306,11 +312,29 @@
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>165, 17</value>
   </metadata>
+  <data name="加载模型ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="加载模型ToolStripMenuItem.Text" xml:space="preserve">
+    <value>加载模型</value>
+  </data>
+  <data name="清除模型ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="清除模型ToolStripMenuItem.Text" xml:space="preserve">
+    <value>清除模型</value>
+  </data>
   <data name="文件ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 21</value>
   </data>
   <data name="文件ToolStripMenuItem.Text" xml:space="preserve">
     <value>文件</value>
+  </data>
+  <data name="启用动画ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="启用动画ToolStripMenuItem.Text" xml:space="preserve">
+    <value>启用动画</value>
   </data>
   <data name="设置缓入缓出ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 22</value>
@@ -323,6 +347,18 @@
   </data>
   <data name="动画ToolStripMenuItem.Text" xml:space="preserve">
     <value>动画</value>
+  </data>
+  <data name="检查更新ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="检查更新ToolStripMenuItem.Text" xml:space="preserve">
+    <value>检查更新</value>
+  </data>
+  <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
+    <value>About</value>
   </data>
   <data name="关于ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 21</value>
@@ -378,6 +414,12 @@
   <data name="animeStart.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
+  <data name="animeStart.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="animeStart.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 10.5pt</value>
+  </data>
   <data name="animeStart.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -426,6 +468,12 @@
   <data name="animeSaveStart.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
+  <data name="animeSaveStart.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="animeSaveStart.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 10.5pt</value>
+  </data>
   <data name="animeSaveStart.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -467,6 +515,12 @@
   </data>
   <data name="animeSaveEnd.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
+  </data>
+  <data name="animeSaveEnd.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="animeSaveEnd.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 10.5pt</value>
   </data>
   <data name="animeSaveEnd.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -561,6 +615,9 @@
   <data name="scaleLable.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="scaleLable.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
   <data name="scaleLable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -568,7 +625,7 @@
     <value>13, 371</value>
   </data>
   <data name="scaleLable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 12</value>
+    <value>37, 17</value>
   </data>
   <data name="scaleLable.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -615,6 +672,9 @@
   <data name="rotZLable.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="rotZLable.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
   <data name="rotZLable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -622,7 +682,7 @@
     <value>13, 320</value>
   </data>
   <data name="rotZLable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 12</value>
+    <value>31, 17</value>
   </data>
   <data name="rotZLable.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -645,6 +705,9 @@
   <data name="rotYLable.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="rotYLable.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
   <data name="rotYLable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -652,7 +715,7 @@
     <value>12, 269</value>
   </data>
   <data name="rotYLable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 12</value>
+    <value>31, 17</value>
   </data>
   <data name="rotYLable.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -675,6 +738,9 @@
   <data name="rotXLable.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="rotXLable.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
   <data name="rotXLable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -682,7 +748,7 @@
     <value>12, 218</value>
   </data>
   <data name="rotXLable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 12</value>
+    <value>31, 17</value>
   </data>
   <data name="rotXLable.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -705,6 +771,9 @@
   <data name="ZposLable.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="ZposLable.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
   <data name="ZposLable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -712,7 +781,7 @@
     <value>12, 167</value>
   </data>
   <data name="ZposLable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>11, 12</value>
+    <value>14, 17</value>
   </data>
   <data name="ZposLable.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -735,6 +804,9 @@
   <data name="YposLable.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="YposLable.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
   <data name="YposLable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -742,7 +814,7 @@
     <value>12, 116</value>
   </data>
   <data name="YposLable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>11, 12</value>
+    <value>14, 17</value>
   </data>
   <data name="YposLable.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -765,11 +837,14 @@
   <data name="XposLable.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="XposLable.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
   <data name="XposLable.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 65</value>
   </data>
   <data name="XposLable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>11, 12</value>
+    <value>14, 17</value>
   </data>
   <data name="XposLable.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -958,10 +1033,10 @@
     <value>Fill</value>
   </data>
   <data name="treeView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 48</value>
+    <value>0, 58</value>
   </data>
   <data name="treeView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>290, 408</value>
+    <value>290, 398</value>
   </data>
   <data name="treeView1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1055,30 +1130,6 @@
   </data>
   <data name="&gt;&gt;MainContSplit.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="加载模型ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="加载模型ToolStripMenuItem.Text" xml:space="preserve">
-    <value>加载模型</value>
-  </data>
-  <data name="清除模型ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="清除模型ToolStripMenuItem.Text" xml:space="preserve">
-    <value>清除模型</value>
-  </data>
-  <data name="检查更新ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="检查更新ToolStripMenuItem.Text" xml:space="preserve">
-    <value>检查更新</value>
-  </data>
-  <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
-    <value>About</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1695,6 +1746,18 @@
   <data name="&gt;&gt;清除模型ToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;动画ToolStripMenuItem.Name" xml:space="preserve">
+    <value>动画ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;动画ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;设置缓入缓出ToolStripMenuItem.Name" xml:space="preserve">
+    <value>设置缓入缓出ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;设置缓入缓出ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;关于ToolStripMenuItem.Name" xml:space="preserve">
     <value>关于ToolStripMenuItem</value>
   </data>
@@ -1713,16 +1776,10 @@
   <data name="&gt;&gt;aboutToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;动画ToolStripMenuItem.Name" xml:space="preserve">
-    <value>动画ToolStripMenuItem</value>
+  <data name="&gt;&gt;启用动画ToolStripMenuItem.Name" xml:space="preserve">
+    <value>启用动画ToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;动画ToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;设置缓入缓出ToolStripMenuItem.Name" xml:space="preserve">
-    <value>设置缓入缓出ToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;设置缓入缓出ToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;启用动画ToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
