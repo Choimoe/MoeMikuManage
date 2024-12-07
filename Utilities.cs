@@ -77,5 +77,26 @@ namespace MoeMikuManage
             return (float)(Math.Sign(sign) * Math.Abs(magnitude));
         }
     }
+    public static class MathExtensions
+    {
+        // Clamp 实现
+        public static int Clamp(int value, int min, int max)
+        {
+            if (value < min) return min;
+            if (value > max) return max;
+            return value;
+        }
+
+        // Vector3的Reflect方法实现
+        public static Vector3 Reflect(Vector3 incident, Vector3 normal)
+        {
+            // R = I - 2(N·I)N
+            // R: 反射向量
+            // I: 入射向量
+            // N: 法线向量
+            float dotProduct = Vector3.Dot(normal, incident);
+            return incident - 2 * dotProduct * normal;
+        }
+    }
 
 }

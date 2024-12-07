@@ -145,7 +145,7 @@
     <value>MainContSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;glControl1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="loadModel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -313,13 +313,13 @@
     <value>165, 17</value>
   </metadata>
   <data name="加载模型ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>124, 22</value>
   </data>
   <data name="加载模型ToolStripMenuItem.Text" xml:space="preserve">
     <value>加载模型</value>
   </data>
   <data name="清除模型ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>124, 22</value>
   </data>
   <data name="清除模型ToolStripMenuItem.Text" xml:space="preserve">
     <value>清除模型</value>
@@ -331,13 +331,13 @@
     <value>文件</value>
   </data>
   <data name="启用动画ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>148, 22</value>
   </data>
   <data name="启用动画ToolStripMenuItem.Text" xml:space="preserve">
     <value>启用动画</value>
   </data>
   <data name="设置缓入缓出ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>148, 22</value>
   </data>
   <data name="设置缓入缓出ToolStripMenuItem.Text" xml:space="preserve">
     <value>设置缓入缓出</value>
@@ -348,14 +348,32 @@
   <data name="动画ToolStripMenuItem.Text" xml:space="preserve">
     <value>动画</value>
   </data>
-  <data name="检查更新ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="renderToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 22</value>
+  </data>
+  <data name="renderToolStripMenuItem.Text" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="rayTracingToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="rayTracingToolStripMenuItem.Text" xml:space="preserve">
+    <value>Ray Tracing</value>
+  </data>
+  <data name="渲染选项ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 21</value>
+  </data>
+  <data name="渲染选项ToolStripMenuItem.Text" xml:space="preserve">
+    <value>渲染选项</value>
+  </data>
+  <data name="检查更新ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
   </data>
   <data name="检查更新ToolStripMenuItem.Text" xml:space="preserve">
     <value>检查更新</value>
   </data>
   <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>124, 22</value>
   </data>
   <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
     <value>About</value>
@@ -1098,6 +1116,33 @@
   <data name="&gt;&gt;MainContSplit.Panel1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="rayTracingOutput.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="rayTracingOutput.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="rayTracingOutput.Size" type="System.Drawing.Size, System.Drawing">
+    <value>782, 621</value>
+  </data>
+  <data name="rayTracingOutput.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="rayTracingOutput.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;rayTracingOutput.Name" xml:space="preserve">
+    <value>rayTracingOutput</value>
+  </data>
+  <data name="&gt;&gt;rayTracingOutput.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rayTracingOutput.Parent" xml:space="preserve">
+    <value>MainContSplit.Panel2</value>
+  </data>
+  <data name="&gt;&gt;rayTracingOutput.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;MainContSplit.Panel2.Name" xml:space="preserve">
     <value>MainContSplit.Panel2</value>
   </data>
@@ -1752,10 +1797,34 @@
   <data name="&gt;&gt;动画ToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;启用动画ToolStripMenuItem.Name" xml:space="preserve">
+    <value>启用动画ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;启用动画ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;设置缓入缓出ToolStripMenuItem.Name" xml:space="preserve">
     <value>设置缓入缓出ToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;设置缓入缓出ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;渲染选项ToolStripMenuItem.Name" xml:space="preserve">
+    <value>渲染选项ToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;渲染选项ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;renderToolStripMenuItem.Name" xml:space="preserve">
+    <value>renderToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;renderToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rayTracingToolStripMenuItem.Name" xml:space="preserve">
+    <value>rayTracingToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;rayTracingToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;关于ToolStripMenuItem.Name" xml:space="preserve">
@@ -1774,12 +1843,6 @@
     <value>aboutToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;aboutToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;启用动画ToolStripMenuItem.Name" xml:space="preserve">
-    <value>启用动画ToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;启用动画ToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

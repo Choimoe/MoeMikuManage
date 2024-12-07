@@ -9,14 +9,16 @@ namespace MoeMikuManage
     {
         static private List<Vector3> vertices = new List<Vector3>();
         static private List<Vector3> normals = new List<Vector3>();
-        static private List<Vector2> texCoords = new List<Vector2>();
         static private List<int[]> faces = new List<int[]>();
+        static private List<Vector2> texCoords = new List<Vector2>();
 
         static public void ParseFile(string filePath)
         {
             using (StreamReader reader = new StreamReader(filePath))
             {
                 string line;
+                string currentObject = "default";  // 默认物体名
+
                 while ((line = reader.ReadLine()) != null)
                 {
                     string[] tokens = line.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
@@ -26,6 +28,9 @@ namespace MoeMikuManage
 
                     switch (tokens[0])
                     {
+                        case "o":
+                            currentObject = tokens[1];
+                            break;
                         case "v":
                             float x = float.Parse(tokens[1]);
                             float y = float.Parse(tokens[2]);

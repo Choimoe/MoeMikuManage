@@ -32,7 +32,11 @@ namespace MoeMikuManage
             this.加载模型ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.清除模型ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.动画ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.启用动画ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.设置缓入缓出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.渲染选项ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.renderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rayTracingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.检查更新ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,7 +61,7 @@ namespace MoeMikuManage
             this.Xpos = new System.Windows.Forms.TrackBar();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.treeView1 = new System.Windows.Forms.TreeView();
-            this.启用动画ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rayTracingOutput = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.MainContSplit)).BeginInit();
             this.MainContSplit.Panel1.SuspendLayout();
             this.MainContSplit.Panel2.SuspendLayout();
@@ -83,6 +87,7 @@ namespace MoeMikuManage
             ((System.ComponentModel.ISupportInitialize)(this.Ypos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Xpos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rayTracingOutput)).BeginInit();
             this.SuspendLayout();
             // 
             // glControl1
@@ -146,6 +151,7 @@ namespace MoeMikuManage
             // 
             // MainContSplit.Panel2
             // 
+            this.MainContSplit.Panel2.Controls.Add(this.rayTracingOutput);
             this.MainContSplit.Panel2.Controls.Add(this.glControl1);
             // 
             // FileSplit
@@ -186,6 +192,7 @@ namespace MoeMikuManage
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.文件ToolStripMenuItem,
             this.动画ToolStripMenuItem,
+            this.渲染选项ToolStripMenuItem,
             this.关于ToolStripMenuItem});
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
@@ -216,11 +223,36 @@ namespace MoeMikuManage
             this.动画ToolStripMenuItem.Name = "动画ToolStripMenuItem";
             resources.ApplyResources(this.动画ToolStripMenuItem, "动画ToolStripMenuItem");
             // 
+            // 启用动画ToolStripMenuItem
+            // 
+            this.启用动画ToolStripMenuItem.Name = "启用动画ToolStripMenuItem";
+            resources.ApplyResources(this.启用动画ToolStripMenuItem, "启用动画ToolStripMenuItem");
+            // 
             // 设置缓入缓出ToolStripMenuItem
             // 
             this.设置缓入缓出ToolStripMenuItem.Name = "设置缓入缓出ToolStripMenuItem";
             resources.ApplyResources(this.设置缓入缓出ToolStripMenuItem, "设置缓入缓出ToolStripMenuItem");
             this.设置缓入缓出ToolStripMenuItem.Click += new System.EventHandler(this.设置缓入缓出ToolStripMenuItem_Click);
+            // 
+            // 渲染选项ToolStripMenuItem
+            // 
+            this.渲染选项ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.renderToolStripMenuItem,
+            this.rayTracingToolStripMenuItem});
+            this.渲染选项ToolStripMenuItem.Name = "渲染选项ToolStripMenuItem";
+            resources.ApplyResources(this.渲染选项ToolStripMenuItem, "渲染选项ToolStripMenuItem");
+            // 
+            // renderToolStripMenuItem
+            // 
+            this.renderToolStripMenuItem.Name = "renderToolStripMenuItem";
+            resources.ApplyResources(this.renderToolStripMenuItem, "renderToolStripMenuItem");
+            this.renderToolStripMenuItem.Click += new System.EventHandler(this.renderToolStripMenuItem_Click);
+            // 
+            // rayTracingToolStripMenuItem
+            // 
+            this.rayTracingToolStripMenuItem.Name = "rayTracingToolStripMenuItem";
+            resources.ApplyResources(this.rayTracingToolStripMenuItem, "rayTracingToolStripMenuItem");
+            this.rayTracingToolStripMenuItem.Click += new System.EventHandler(this.rayTracingToolStripMenuItem_Click);
             // 
             // 关于ToolStripMenuItem
             // 
@@ -389,10 +421,12 @@ namespace MoeMikuManage
             resources.ApplyResources(this.treeView1, "treeView1");
             this.treeView1.Name = "treeView1";
             // 
-            // 启用动画ToolStripMenuItem
+            // rayTracingOutput
             // 
-            this.启用动画ToolStripMenuItem.Name = "启用动画ToolStripMenuItem";
-            resources.ApplyResources(this.启用动画ToolStripMenuItem, "启用动画ToolStripMenuItem");
+            resources.ApplyResources(this.rayTracingOutput, "rayTracingOutput");
+            this.rayTracingOutput.Name = "rayTracingOutput";
+            this.rayTracingOutput.TabStop = false;
+            this.rayTracingOutput.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // ModelViewer
             // 
@@ -440,6 +474,7 @@ namespace MoeMikuManage
             ((System.ComponentModel.ISupportInitialize)(this.Ypos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Xpos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rayTracingOutput)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -486,6 +521,10 @@ namespace MoeMikuManage
         private System.Windows.Forms.ToolStripMenuItem 动画ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 设置缓入缓出ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 启用动画ToolStripMenuItem;
+        private System.Windows.Forms.PictureBox rayTracingOutput;
+        private System.Windows.Forms.ToolStripMenuItem 渲染选项ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem renderToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem rayTracingToolStripMenuItem;
     }
 }
 

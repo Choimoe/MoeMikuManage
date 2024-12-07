@@ -29,14 +29,13 @@ namespace MoeMikuManage
         }
         private void DrawSphere(Vector3 position, float radius)
         {
-            // 绘制一个小球在给定的位置
             GL.PushMatrix();
-            GL.Translate(position); // 移动到目标位置
-            GL.Color4(1.0f, 0.0f, 0.0f, 0.3f); // 设置颜色为红色并设定透明度 (alpha = 0.5)
+            GL.Translate(position);
+            GL.Color4(1.0f, 0.0f, 0.0f, 0.3f);
             GL.Begin(BeginMode.Triangles);
 
-            int slices = 16; // 横向分割数
-            int stacks = 16; // 纵向分割数
+            int slices = 16;
+            int stacks = 16;
             for (int i = 0; i < slices; i++)
             {
                 double phi1 = System.Math.PI * (i) / slices;
@@ -80,8 +79,7 @@ namespace MoeMikuManage
             SetUniformVariables();
             DrawModel();
 
-            // 绘制小球在 cameraTarget 上
-            DrawSphere(cameraTarget, 0.1f);  // 假设小球半径是 0.1f
+            // DrawSphere(cameraTarget, 0.1f);
 
             CleanupResources();
             SwapBuffers();

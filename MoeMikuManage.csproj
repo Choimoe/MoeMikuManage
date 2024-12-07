@@ -98,6 +98,8 @@
     <Compile Include="ObjParser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Render\MtlParser.cs" />
+    <Compile Include="Render\RayTracing.cs" />
     <Compile Include="Render\RenderHandler.cs">
       <SubType>Form</SubType>
     </Compile>

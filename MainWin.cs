@@ -1,4 +1,5 @@
-﻿using OpenTK;
+﻿using MoeMikuManage.Render;
+using OpenTK;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -76,8 +77,29 @@ namespace MoeMikuManage
         {
 
         }
-        
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void renderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            rayTracingOutput.Visible = false;
+        }
+
+        private void rayTracingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            rayTracingOutput.Visible = true;
+            startRenderRayTracing();
+        }
+
+        private void startRenderRayTracing()
+        {
+            Vector3 lightPos = new Vector3(0.81f, 2.04f, -0.11f);
+            RayTracing t = new RayTracing(vertices, normals, faces, lightPos, cameraPos, cameraDir);
+            t.RenderScene();
+        }
 
         private void btnRotate_Click(object sender, EventArgs e)
         {

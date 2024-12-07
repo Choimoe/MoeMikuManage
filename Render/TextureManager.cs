@@ -1,4 +1,5 @@
-﻿using OpenTK.Graphics.OpenGL;
+﻿using MoeMikuManage.Render;
+using OpenTK.Graphics.OpenGL;
 using StbImageSharp;
 using System.IO;
 
@@ -6,6 +7,14 @@ namespace MoeMikuManage
 {
     public partial class ModelViewer
     {
+        private void ApplyMaterial(MtlParser.Material material)
+        {
+            GL.Material(MaterialFace.FrontAndBack, MaterialParameter.Ambient, new float[] { material.AmbientColor.X, material.AmbientColor.Y, material.AmbientColor.Z });
+            GL.Material(MaterialFace.FrontAndBack, MaterialParameter.Diffuse, new float[] { material.DiffuseColor.X, material.DiffuseColor.Y, material.DiffuseColor.Z });
+            GL.Material(MaterialFace.FrontAndBack, MaterialParameter.Specular, new float[] { material.SpecularColor.X, material.SpecularColor.Y, material.SpecularColor.Z });
+            GL.Material(MaterialFace.FrontAndBack, MaterialParameter.Shininess, material.Shininess);
+
+        }
         private void LoadTexture(string filePath)
         {
             TextureObject = GL.GenTexture();
