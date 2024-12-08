@@ -145,7 +145,7 @@
     <value>MainContSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;glControl1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="loadModel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -181,7 +181,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;loadModel.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
   <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -253,7 +253,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;editModel.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="DirInfo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -312,78 +312,6 @@
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>165, 17</value>
   </metadata>
-  <data name="加载模型ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 22</value>
-  </data>
-  <data name="加载模型ToolStripMenuItem.Text" xml:space="preserve">
-    <value>加载模型</value>
-  </data>
-  <data name="清除模型ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 22</value>
-  </data>
-  <data name="清除模型ToolStripMenuItem.Text" xml:space="preserve">
-    <value>清除模型</value>
-  </data>
-  <data name="文件ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 21</value>
-  </data>
-  <data name="文件ToolStripMenuItem.Text" xml:space="preserve">
-    <value>文件</value>
-  </data>
-  <data name="启用动画ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 22</value>
-  </data>
-  <data name="启用动画ToolStripMenuItem.Text" xml:space="preserve">
-    <value>启用动画</value>
-  </data>
-  <data name="设置缓入缓出ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 22</value>
-  </data>
-  <data name="设置缓入缓出ToolStripMenuItem.Text" xml:space="preserve">
-    <value>设置缓入缓出</value>
-  </data>
-  <data name="动画ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 21</value>
-  </data>
-  <data name="动画ToolStripMenuItem.Text" xml:space="preserve">
-    <value>动画</value>
-  </data>
-  <data name="renderToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="renderToolStripMenuItem.Text" xml:space="preserve">
-    <value>Normal</value>
-  </data>
-  <data name="rayTracingToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="rayTracingToolStripMenuItem.Text" xml:space="preserve">
-    <value>Ray Tracing</value>
-  </data>
-  <data name="渲染选项ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 21</value>
-  </data>
-  <data name="渲染选项ToolStripMenuItem.Text" xml:space="preserve">
-    <value>渲染选项</value>
-  </data>
-  <data name="检查更新ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 22</value>
-  </data>
-  <data name="检查更新ToolStripMenuItem.Text" xml:space="preserve">
-    <value>检查更新</value>
-  </data>
-  <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 22</value>
-  </data>
-  <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
-    <value>About</value>
-  </data>
-  <data name="关于ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 21</value>
-  </data>
-  <data name="关于ToolStripMenuItem.Text" xml:space="preserve">
-    <value>帮助</value>
-  </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -418,6 +346,204 @@
     <value>FileSplit</value>
   </data>
   <data name="&gt;&gt;FileSplit.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="RTLightPosZLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RTLightPosZLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="RTLightPosZLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RTLightPosZLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 120</value>
+  </data>
+  <data name="RTLightPosZLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 17</value>
+  </data>
+  <data name="RTLightPosZLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="RTLightPosZLabel.Text" xml:space="preserve">
+    <value>z</value>
+  </data>
+  <data name="&gt;&gt;RTLightPosZLabel.Name" xml:space="preserve">
+    <value>RTLightPosZLabel</value>
+  </data>
+  <data name="&gt;&gt;RTLightPosZLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RTLightPosZLabel.Parent" xml:space="preserve">
+    <value>RayTracingSettingsPlane</value>
+  </data>
+  <data name="&gt;&gt;RTLightPosZLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="RTLightPosYLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RTLightPosYLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="RTLightPosYLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RTLightPosYLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 69</value>
+  </data>
+  <data name="RTLightPosYLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 17</value>
+  </data>
+  <data name="RTLightPosYLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="RTLightPosYLabel.Text" xml:space="preserve">
+    <value>y</value>
+  </data>
+  <data name="&gt;&gt;RTLightPosYLabel.Name" xml:space="preserve">
+    <value>RTLightPosYLabel</value>
+  </data>
+  <data name="&gt;&gt;RTLightPosYLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RTLightPosYLabel.Parent" xml:space="preserve">
+    <value>RayTracingSettingsPlane</value>
+  </data>
+  <data name="&gt;&gt;RTLightPosYLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RTLightPosXLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RTLightPosXLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="RTLightPosXLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RTLightPosXLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 18</value>
+  </data>
+  <data name="RTLightPosXLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 17</value>
+  </data>
+  <data name="RTLightPosXLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="RTLightPosXLabel.Text" xml:space="preserve">
+    <value>x</value>
+  </data>
+  <data name="&gt;&gt;RTLightPosXLabel.Name" xml:space="preserve">
+    <value>RTLightPosXLabel</value>
+  </data>
+  <data name="&gt;&gt;RTLightPosXLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RTLightPosXLabel.Parent" xml:space="preserve">
+    <value>RayTracingSettingsPlane</value>
+  </data>
+  <data name="&gt;&gt;RTLightPosXLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="RTLightPosZSet.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RTLightPosZSet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 120</value>
+  </data>
+  <data name="RTLightPosZSet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 45</value>
+  </data>
+  <data name="RTLightPosZSet.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;RTLightPosZSet.Name" xml:space="preserve">
+    <value>RTLightPosZSet</value>
+  </data>
+  <data name="&gt;&gt;RTLightPosZSet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RTLightPosZSet.Parent" xml:space="preserve">
+    <value>RayTracingSettingsPlane</value>
+  </data>
+  <data name="&gt;&gt;RTLightPosZSet.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="RTLightPosYSet.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RTLightPosYSet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 69</value>
+  </data>
+  <data name="RTLightPosYSet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 45</value>
+  </data>
+  <data name="RTLightPosYSet.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;RTLightPosYSet.Name" xml:space="preserve">
+    <value>RTLightPosYSet</value>
+  </data>
+  <data name="&gt;&gt;RTLightPosYSet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RTLightPosYSet.Parent" xml:space="preserve">
+    <value>RayTracingSettingsPlane</value>
+  </data>
+  <data name="&gt;&gt;RTLightPosYSet.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="RTLightPosXSet.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RTLightPosXSet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 18</value>
+  </data>
+  <data name="RTLightPosXSet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 45</value>
+  </data>
+  <data name="RTLightPosXSet.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;RTLightPosXSet.Name" xml:space="preserve">
+    <value>RTLightPosXSet</value>
+  </data>
+  <data name="&gt;&gt;RTLightPosXSet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RTLightPosXSet.Parent" xml:space="preserve">
+    <value>RayTracingSettingsPlane</value>
+  </data>
+  <data name="&gt;&gt;RTLightPosXSet.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="RayTracingSettingsPlane.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="RayTracingSettingsPlane.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 58</value>
+  </data>
+  <data name="RayTracingSettingsPlane.Size" type="System.Drawing.Size, System.Drawing">
+    <value>290, 364</value>
+  </data>
+  <data name="RayTracingSettingsPlane.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="RayTracingSettingsPlane.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;RayTracingSettingsPlane.Name" xml:space="preserve">
+    <value>RayTracingSettingsPlane</value>
+  </data>
+  <data name="&gt;&gt;RayTracingSettingsPlane.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RayTracingSettingsPlane.Parent" xml:space="preserve">
+    <value>FileSplit.Panel2</value>
+  </data>
+  <data name="&gt;&gt;RayTracingSettingsPlane.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="animePane.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -628,7 +754,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;animePane.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="scaleLable.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -661,7 +787,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;scaleLable.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="scale.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -685,7 +811,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;scale.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="rotZLable.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -718,7 +844,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;rotZLable.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="rotYLable.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -751,7 +877,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;rotYLable.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="rotXLable.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -784,7 +910,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;rotXLable.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="ZposLable.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -817,7 +943,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;ZposLable.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="YposLable.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -850,7 +976,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;YposLable.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="XposLable.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -880,7 +1006,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;XposLable.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="rotX.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -904,7 +1030,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;rotX.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="rotY.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -928,7 +1054,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;rotY.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="rotZ.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -952,7 +1078,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;rotZ.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="Zpos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -976,7 +1102,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;Zpos.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="Ypos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1000,7 +1126,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;Ypos.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="Xpos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1024,7 +1150,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;Xpos.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="trackBar1.Location" type="System.Drawing.Point, System.Drawing">
     <value>82, 65</value>
@@ -1045,7 +1171,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;trackBar1.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="treeView1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1069,7 +1195,7 @@
     <value>FileSplit.Panel2</value>
   </data>
   <data name="&gt;&gt;treeView1.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="&gt;&gt;FileSplit.Panel2.Name" xml:space="preserve">
     <value>FileSplit.Panel2</value>
@@ -1116,33 +1242,6 @@
   <data name="&gt;&gt;MainContSplit.Panel1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="rayTracingOutput.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="rayTracingOutput.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="rayTracingOutput.Size" type="System.Drawing.Size, System.Drawing">
-    <value>782, 621</value>
-  </data>
-  <data name="rayTracingOutput.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="rayTracingOutput.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;rayTracingOutput.Name" xml:space="preserve">
-    <value>rayTracingOutput</value>
-  </data>
-  <data name="&gt;&gt;rayTracingOutput.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rayTracingOutput.Parent" xml:space="preserve">
-    <value>MainContSplit.Panel2</value>
-  </data>
-  <data name="&gt;&gt;rayTracingOutput.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="&gt;&gt;MainContSplit.Panel2.Name" xml:space="preserve">
     <value>MainContSplit.Panel2</value>
   </data>
@@ -1175,6 +1274,78 @@
   </data>
   <data name="&gt;&gt;MainContSplit.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="文件ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 21</value>
+  </data>
+  <data name="文件ToolStripMenuItem.Text" xml:space="preserve">
+    <value>文件</value>
+  </data>
+  <data name="加载模型ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="加载模型ToolStripMenuItem.Text" xml:space="preserve">
+    <value>加载模型</value>
+  </data>
+  <data name="清除模型ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="清除模型ToolStripMenuItem.Text" xml:space="preserve">
+    <value>清除模型</value>
+  </data>
+  <data name="动画ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 21</value>
+  </data>
+  <data name="动画ToolStripMenuItem.Text" xml:space="preserve">
+    <value>动画</value>
+  </data>
+  <data name="启用动画ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 22</value>
+  </data>
+  <data name="启用动画ToolStripMenuItem.Text" xml:space="preserve">
+    <value>启用动画</value>
+  </data>
+  <data name="设置缓入缓出ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 22</value>
+  </data>
+  <data name="设置缓入缓出ToolStripMenuItem.Text" xml:space="preserve">
+    <value>设置缓入缓出</value>
+  </data>
+  <data name="渲染选项ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 21</value>
+  </data>
+  <data name="渲染选项ToolStripMenuItem.Text" xml:space="preserve">
+    <value>渲染选项</value>
+  </data>
+  <data name="renderToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 22</value>
+  </data>
+  <data name="renderToolStripMenuItem.Text" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="rayTracingToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 22</value>
+  </data>
+  <data name="rayTracingToolStripMenuItem.Text" xml:space="preserve">
+    <value>Ray Tracing</value>
+  </data>
+  <data name="关于ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 21</value>
+  </data>
+  <data name="关于ToolStripMenuItem.Text" xml:space="preserve">
+    <value>帮助</value>
+  </data>
+  <data name="检查更新ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="检查更新ToolStripMenuItem.Text" xml:space="preserve">
+    <value>检查更新</value>
+  </data>
+  <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
+    <value>About</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

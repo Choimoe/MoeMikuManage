@@ -89,6 +89,8 @@
     <Compile Include="MainFormAct.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="RayTracing\RayObject.cs" />
+    <Compile Include="RayTracing\RayTracingScene.cs" />
     <Compile Include="Render\MaterialLightManager.cs">
       <SubType>Form</SubType>
     </Compile>

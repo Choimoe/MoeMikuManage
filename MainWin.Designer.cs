@@ -40,6 +40,13 @@ namespace MoeMikuManage
             this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.检查更新ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.RayTracingSettingsPlane = new System.Windows.Forms.Panel();
+            this.RTLightPosZLabel = new System.Windows.Forms.Label();
+            this.RTLightPosYLabel = new System.Windows.Forms.Label();
+            this.RTLightPosXLabel = new System.Windows.Forms.Label();
+            this.RTLightPosZSet = new System.Windows.Forms.TrackBar();
+            this.RTLightPosYSet = new System.Windows.Forms.TrackBar();
+            this.RTLightPosXSet = new System.Windows.Forms.TrackBar();
             this.animePane = new System.Windows.Forms.SplitContainer();
             this.animeStart = new System.Windows.Forms.Button();
             this.animeStartEndSet = new System.Windows.Forms.SplitContainer();
@@ -61,7 +68,6 @@ namespace MoeMikuManage
             this.Xpos = new System.Windows.Forms.TrackBar();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.treeView1 = new System.Windows.Forms.TreeView();
-            this.rayTracingOutput = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.MainContSplit)).BeginInit();
             this.MainContSplit.Panel1.SuspendLayout();
             this.MainContSplit.Panel2.SuspendLayout();
@@ -71,6 +77,10 @@ namespace MoeMikuManage
             this.FileSplit.Panel2.SuspendLayout();
             this.FileSplit.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.RayTracingSettingsPlane.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.RTLightPosZSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RTLightPosYSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RTLightPosXSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.animePane)).BeginInit();
             this.animePane.Panel1.SuspendLayout();
             this.animePane.Panel2.SuspendLayout();
@@ -87,7 +97,6 @@ namespace MoeMikuManage
             ((System.ComponentModel.ISupportInitialize)(this.Ypos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Xpos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rayTracingOutput)).BeginInit();
             this.SuspendLayout();
             // 
             // glControl1
@@ -151,7 +160,6 @@ namespace MoeMikuManage
             // 
             // MainContSplit.Panel2
             // 
-            this.MainContSplit.Panel2.Controls.Add(this.rayTracingOutput);
             this.MainContSplit.Panel2.Controls.Add(this.glControl1);
             // 
             // FileSplit
@@ -166,6 +174,7 @@ namespace MoeMikuManage
             // 
             // FileSplit.Panel2
             // 
+            this.FileSplit.Panel2.Controls.Add(this.RayTracingSettingsPlane);
             this.FileSplit.Panel2.Controls.Add(this.animePane);
             this.FileSplit.Panel2.Controls.Add(this.scaleLable);
             this.FileSplit.Panel2.Controls.Add(this.scale);
@@ -272,6 +281,57 @@ namespace MoeMikuManage
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
+            // 
+            // RayTracingSettingsPlane
+            // 
+            this.RayTracingSettingsPlane.Controls.Add(this.RTLightPosZLabel);
+            this.RayTracingSettingsPlane.Controls.Add(this.RTLightPosYLabel);
+            this.RayTracingSettingsPlane.Controls.Add(this.RTLightPosXLabel);
+            this.RayTracingSettingsPlane.Controls.Add(this.RTLightPosZSet);
+            this.RayTracingSettingsPlane.Controls.Add(this.RTLightPosYSet);
+            this.RayTracingSettingsPlane.Controls.Add(this.RTLightPosXSet);
+            resources.ApplyResources(this.RayTracingSettingsPlane, "RayTracingSettingsPlane");
+            this.RayTracingSettingsPlane.Name = "RayTracingSettingsPlane";
+            this.RayTracingSettingsPlane.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // RTLightPosZLabel
+            // 
+            resources.ApplyResources(this.RTLightPosZLabel, "RTLightPosZLabel");
+            this.RTLightPosZLabel.Name = "RTLightPosZLabel";
+            // 
+            // RTLightPosYLabel
+            // 
+            resources.ApplyResources(this.RTLightPosYLabel, "RTLightPosYLabel");
+            this.RTLightPosYLabel.Name = "RTLightPosYLabel";
+            // 
+            // RTLightPosXLabel
+            // 
+            resources.ApplyResources(this.RTLightPosXLabel, "RTLightPosXLabel");
+            this.RTLightPosXLabel.Name = "RTLightPosXLabel";
+            // 
+            // RTLightPosZSet
+            // 
+            resources.ApplyResources(this.RTLightPosZSet, "RTLightPosZSet");
+            this.RTLightPosZSet.Maximum = 100;
+            this.RTLightPosZSet.Minimum = -100;
+            this.RTLightPosZSet.Name = "RTLightPosZSet";
+            this.RTLightPosZSet.Scroll += new System.EventHandler(this.RTLightPosZSet_Scroll);
+            // 
+            // RTLightPosYSet
+            // 
+            resources.ApplyResources(this.RTLightPosYSet, "RTLightPosYSet");
+            this.RTLightPosYSet.Maximum = 100;
+            this.RTLightPosYSet.Minimum = -100;
+            this.RTLightPosYSet.Name = "RTLightPosYSet";
+            this.RTLightPosYSet.Scroll += new System.EventHandler(this.RTLightPosYSet_Scroll);
+            // 
+            // RTLightPosXSet
+            // 
+            resources.ApplyResources(this.RTLightPosXSet, "RTLightPosXSet");
+            this.RTLightPosXSet.Maximum = 100;
+            this.RTLightPosXSet.Minimum = -100;
+            this.RTLightPosXSet.Name = "RTLightPosXSet";
+            this.RTLightPosXSet.Scroll += new System.EventHandler(this.RTLightPosXSet_Scroll);
             // 
             // animePane
             // 
@@ -421,13 +481,6 @@ namespace MoeMikuManage
             resources.ApplyResources(this.treeView1, "treeView1");
             this.treeView1.Name = "treeView1";
             // 
-            // rayTracingOutput
-            // 
-            resources.ApplyResources(this.rayTracingOutput, "rayTracingOutput");
-            this.rayTracingOutput.Name = "rayTracingOutput";
-            this.rayTracingOutput.TabStop = false;
-            this.rayTracingOutput.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // ModelViewer
             // 
             this.AcceptButton = this.loadModel;
@@ -455,6 +508,11 @@ namespace MoeMikuManage
             this.FileSplit.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.RayTracingSettingsPlane.ResumeLayout(false);
+            this.RayTracingSettingsPlane.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.RTLightPosZSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RTLightPosYSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RTLightPosXSet)).EndInit();
             this.animePane.Panel1.ResumeLayout(false);
             this.animePane.Panel1.PerformLayout();
             this.animePane.Panel2.ResumeLayout(false);
@@ -474,7 +532,6 @@ namespace MoeMikuManage
             ((System.ComponentModel.ISupportInitialize)(this.Ypos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Xpos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rayTracingOutput)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -521,10 +578,16 @@ namespace MoeMikuManage
         private System.Windows.Forms.ToolStripMenuItem 动画ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 设置缓入缓出ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 启用动画ToolStripMenuItem;
-        private System.Windows.Forms.PictureBox rayTracingOutput;
         private System.Windows.Forms.ToolStripMenuItem 渲染选项ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem renderToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rayTracingToolStripMenuItem;
+        private System.Windows.Forms.Panel RayTracingSettingsPlane;
+        private System.Windows.Forms.Label RTLightPosZLabel;
+        private System.Windows.Forms.Label RTLightPosYLabel;
+        private System.Windows.Forms.Label RTLightPosXLabel;
+        private System.Windows.Forms.TrackBar RTLightPosZSet;
+        private System.Windows.Forms.TrackBar RTLightPosYSet;
+        private System.Windows.Forms.TrackBar RTLightPosXSet;
     }
 }
 

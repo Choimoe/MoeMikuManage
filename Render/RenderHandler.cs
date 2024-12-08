@@ -72,6 +72,44 @@ namespace MoeMikuManage
         }
         private void glControl1_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
         {
+            if (raytracing == 1)
+            {
+                GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
+
+                // Setup projection and view
+                Matrix4 perspective = Matrix4.CreatePerspectiveFieldOfView(1.04f, glControl1.AspectRatio, 0.1f, 1000);
+                Matrix4 lookat = Matrix4.LookAt(cameraPos, cameraTarget, Vector3.UnitY);
+
+                GL.MatrixMode(MatrixMode.Projection);
+                GL.LoadIdentity();
+                GL.LoadMatrix(ref perspective);
+
+                GL.MatrixMode(MatrixMode.Modelview);
+                GL.LoadIdentity();
+                GL.LoadMatrix(ref lookat);
+
+                // Render ray tracing scene
+                if (_rayTracingScene == null)
+                {
+                    InitializeRayTracing();
+                }
+
+                RenderRayTracingScene();
+
+                // Draw ray tracing pixels
+                GL.WindowPos2(0, 0);
+                GL.DrawPixels(WIDTH, HEIGHT, PixelFormat.Rgb, PixelType.UnsignedByte, _pixelBuffer);
+
+                // Optional: Draw coordinate axes
+                GL.Begin(BeginMode.Lines);
+                GL.Color3(Color.Blue);
+                GL.Vertex3(0, 0, -coordinateLinesLong);
+                GL.Vertex3(0, 0, coordinateLinesLong);
+                GL.End();
+
+                glControl1.SwapBuffers();
+                return;
+            }
             InitializeAndClearBuffers();
             SetupProjectionAndViewMatrices();
             DrawCoordinateAxes();

@@ -1,4 +1,5 @@
-﻿using MoeMikuManage.Render;
+﻿using MoeMikuManage.RayTracing;
+using MoeMikuManage.Render;
 using OpenTK;
 using System;
 using System.Collections.Generic;
@@ -46,12 +47,16 @@ namespace MoeMikuManage
 
         private int easeInOutOpt = 0;
         private int animating = 0;
+        private int raytracing = 0;
 
 
         Material modelMat;
         DirectionalLight light;
 
-        
+        private byte[] _pixelBuffer;
+        private RayTracingScene _rayTracingScene;
+
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -85,20 +90,102 @@ namespace MoeMikuManage
 
         private void renderToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            rayTracingOutput.Visible = false;
+            RayTracingSettingsPlane.Visible = false;
+            raytracing = 0;
         }
 
         private void rayTracingToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            rayTracingOutput.Visible = true;
-            startRenderRayTracing();
+            RayTracingSettingsPlane.Visible = true;
+            raytracing = 1;
+            // WIDTH = glControl1.Size.Width;
+            // HEIGHT = glControl1.Size.Height;
+            InitializeRayTracing();
+            glControl1.Invalidate();
+        }
+        private int WIDTH = 800;
+        private int HEIGHT = 600;
+        private void InitializeRayTracing()
+        {
+            _rayTracingScene = new RayTracingScene();
+
+            // Create objects
+            _rayTracingScene.Objects.Add(new SpherePrimitive(
+                new Vector3(-0.5f, -0.5f, -3), 0.5f,
+                new Vector3(1, 0, 0), MaterialType.DIFFUSE, 64.0f));
+
+            _rayTracingScene.Objects.Add(new SpherePrimitive(
+                new Vector3(0.5f, -0.5f, -3), 0.5f,
+                new Vector3(0, 0, 1), MaterialType.DIFFUSE, 32.0f));
+
+            _rayTracingScene.Objects.Add(new PlanePrimitive(
+                new Vector3(0, -1, 0), new Vector3(0, 1, 0),
+                new Vector3(0.6f, 0.3f, 0.2f), MaterialType.DIFFUSE, 16.0f));
+
+            // Add lights
+            _rayTracingScene.Lights.Add(new Light(
+                new Vector3(1, 1, 1), new Vector3(1, 1, 1)));
+
+            _pixelBuffer = new byte[WIDTH * HEIGHT * 3];
+        }
+        private void RenderRayTracingScene()
+        {
+            var pixelBuffer = new Vector3[WIDTH * HEIGHT];
+            _rayTracingScene.setCamera(cameraPos);
+
+            for (int y = 0; y < HEIGHT; ++y)
+            {
+                for (int x = 0; x < WIDTH; ++x)
+                {
+                    float u = (x - WIDTH / 2.0f) / WIDTH;
+                    float v = (y - HEIGHT / 2.0f) / HEIGHT;
+
+                    Vector3 forward = cameraDir.Normalized();
+                    Vector3 up = new Vector3(0, 1, 0);
+                    Vector3 right = Vector3.Cross(forward, up).Normalized();
+                    up = Vector3.Cross(right, forward).Normalized();
+
+                    Vector3 rayDirection = (right * u + up * v + forward).Normalized();
+
+                    Ray ray = new Ray(cameraPos, rayDirection);
+
+                    Vector3 color = _rayTracingScene.Trace(ray);
+                    pixelBuffer[y * WIDTH + x] = color;
+                }
+            }
+
+            for (int i = 0; i < WIDTH * HEIGHT; ++i)
+            {
+                _pixelBuffer[i * 3 + 0] = (byte)(255 * Math.Min(1.0f, pixelBuffer[i].X));
+                _pixelBuffer[i * 3 + 1] = (byte)(255 * Math.Min(1.0f, pixelBuffer[i].Y));
+                _pixelBuffer[i * 3 + 2] = (byte)(255 * Math.Min(1.0f, pixelBuffer[i].Z));
+            }
         }
 
-        private void startRenderRayTracing()
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            Vector3 lightPos = new Vector3(0.81f, 2.04f, -0.11f);
-            RayTracing t = new RayTracing(vertices, normals, faces, lightPos, cameraPos, cameraDir);
-            t.RenderScene();
+
+        }
+
+        private void RTLightPosXSet_Scroll(object sender, EventArgs e)
+        {
+            Vector3 pos = _rayTracingScene.Lights[0].Position;
+            _rayTracingScene.Lights[0].Position = new Vector3(RTLightPosXSet.Value / 20f, pos.Y, pos.Z);
+            glControl1.Invalidate();
+        }
+
+        private void RTLightPosYSet_Scroll(object sender, EventArgs e)
+        {
+            Vector3 pos = _rayTracingScene.Lights[0].Position;
+            _rayTracingScene.Lights[0].Position = new Vector3(pos.X, RTLightPosYSet.Value / 20f, pos.Z);
+            glControl1.Invalidate();
+        }
+
+        private void RTLightPosZSet_Scroll(object sender, EventArgs e)
+        {
+            Vector3 pos = _rayTracingScene.Lights[0].Position;
+            _rayTracingScene.Lights[0].Position = new Vector3(pos.X, pos.Y, RTLightPosZSet.Value / 20f);
+            glControl1.Invalidate();
         }
 
         private void btnRotate_Click(object sender, EventArgs e)
